@@ -1,9 +1,13 @@
 package com.how2java.tmall.service;
 
-import com.how2java.tmall.pojo.User;
-
 import java.util.List;
 
+import com.how2java.tmall.pojo.User;
+
 public interface UserService {
-    List<User> list();
+    void add(User c);
+    void delete(int id);
+    void update(User c);
+    User get(int id);
+    List list();
 }
