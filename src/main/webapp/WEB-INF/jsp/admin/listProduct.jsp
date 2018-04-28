@@ -18,8 +18,8 @@
        $("#addform").sumbit(function(){
            if (!checkEmpty("name", "产品名称"))
                return false;
-//          if (!checkEmpty("subTitle", "小标题"))
-//              return false;
+          if (!checkEmpty("subTitle", "小标题"))
+              return false;
            if (!checkNumber("originalPrice", "原价格"))
                return false;
            if (!checkNumber("promotePrice", "优惠价格"))
@@ -65,7 +65,7 @@
                     <td>
 
                             <%--<c:if test="${!empty p.firstProductImage}">--%>
-                            <%--<img width="40px" src="img/productSingle/${p.firstProductImage.id}.jpg">--%>
+                            <img width="40px" src="img/productSingle/${p.firstProductImage.id}.jpg"><span>${p.firstProductImage.id}</span>
                             <%--</c:if>--%>
 
                     </td>

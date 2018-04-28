@@ -9,6 +9,7 @@ public class Property {
 
     private Category category;
 
+
     //非数据库字段
     public Category getCategory() {
         return category;
